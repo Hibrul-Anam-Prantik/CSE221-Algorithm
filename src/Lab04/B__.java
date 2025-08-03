@@ -16,10 +16,28 @@ public class B__ {
             v[i] = Integer.parseInt(vElem[i]);
             w[i] = Integer.parseInt(wElem[i]);
         }
-
-        // LinkedList<Edge>[] adjList = new LinkedList<>[N + 1];
+        // add to the graph
+        LinkedList<Edge>[]adjList = new LinkedList[N + 1];  // array of linked lists -> contains edges
+        // Initializing each list
+        for(int i = 1; i <= N; ++i) {
+            adjList[i] = new LinkedList<>(); 
+        }  
+        // adding edges to the graph
+        for(int i = 0; i < M; ++i) {
+            adjList[u[i]].add(new Edge(v[i], w[i])); 
+        }   
+        
+        // print the graph
+        for(int i = 1; i <= N; ++i) {
+            System.out.print(i + ":");
+            for(Edge edge : adjList[i]) {
+                System.out.print("(" + edge.vertex + "," + edge.weight + ") ");
+            }
+            System.out.println();
+        }
     }
 
+    // Helper class to represent a pair/Edges (vertex, weight)
     static class Edge {
         int vertex, weight;
         Edge(int v, int w) {
