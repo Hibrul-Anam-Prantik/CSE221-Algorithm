@@ -1,59 +1,53 @@
-import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
 
 public class H {
-    static int N, Q;
-    static ArrayList<Integer>[] graph;
+    public static void main(String[] args) throws Exception {
+        java.io.BufferedReader br = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
 
-    public static void main(String[] args) throws IOException {
-        // Fast input and output
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out));
+        String[] line1 = br.readLine().trim().split("\\s+");  // read first line and split by whitespace --> handles multiple spaces --> more proficiency 
+        int N = Integer.parseInt(line1[0]);
+        int Q = Integer.parseInt(line1[1]);
 
-        // Read N and Q
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        N = Integer.parseInt(st.nextToken());
-        Q = Integer.parseInt(st.nextToken());
-
-        // Initialize graph
-        graph = new ArrayList[N + 1];
-        for (int i = 1; i <= N; i++) {
-            graph[i] = new ArrayList<>();
+        // coprime graph --> adjacency list --> ArrayList of ArrayLists
+        ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
+        for (int i = 0; i <= N; i++) {
+            graph.add(new ArrayList<>());
         }
 
-        // Build the graph: connect i to j if gcd(i, j) == 1 and i ≠ j
         for (int i = 1; i <= N; i++) {
             for (int j = 1; j <= N; j++) {
                 if (i != j && gcd(i, j) == 1) {
-                    graph[i].add(j);
+                    graph.get(i).add(j);
                 }
             }
-            // Sort neighbors for fast access to K-th smallest
-            Collections.sort(graph[i]);
+            java.util.Collections.sort(graph.get(i));  // sorting neighbors for consistent output --> easy access by index
         }
 
-        // Process Q queries
+        StringBuilder result = new StringBuilder();  // to store outputs
+        // queries
         for (int q = 0; q < Q; q++) {
-            st = new StringTokenizer(br.readLine());
-            int X = Integer.parseInt(st.nextToken());
-            int K = Integer.parseInt(st.nextToken());
+            String[] query = br.readLine().split(" ");
+            int X = Integer.parseInt(query[0]);
+            int K = Integer.parseInt(query[1]);
 
-            if (graph[X].size() < K) {
-                out.write("-1\n");
+            ArrayList<Integer> neighbors = graph.get(X);
+            if (K <= neighbors.size()) {
+                result.append(neighbors.get(K - 1)).append("\n");
             } else {
-                out.write(graph[X].get(K - 1) + "\n");
+                result.append("-1\n");
             }
         }
 
-        out.flush(); // flush the output
+        System.out.print(result.toString());
+        br.close();
     }
 
-    // Function to compute gcd
+    // helper function to calc GCD
     static int gcd(int a, int b) {
         while (b != 0) {
-            int temp = a % b;
-            a = b;
-            b = temp;
+            int temp = b;
+            b = a % b;
+            a = temp;
         }
         return a;
     }
