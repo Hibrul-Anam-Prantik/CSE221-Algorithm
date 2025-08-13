@@ -42,8 +42,6 @@ Insertion Sort.
   Judge platforms.
   </br>
   </br>
-  </br></br>
-  </br>
   </br>
 
 
@@ -109,8 +107,6 @@ https://codeforces.com/contestInvitation/50dd6d0f4ca12ac68220ca73a15e3135ae34596
 ### Alternative Link: https://codeforces.com/contests/623599
 [The alternative link will only work after you have successfully
 registered using the first link.]
-Deadline: 11:59 pm, August 9, 2025
-No submission will be considered after the deadline ends.
 
 ### Learning Outcome:
 In this lab, we will learn how to construct graphs using both adjacency
@@ -121,3 +117,21 @@ learned in the previous courses.
 </br>
 </br>
 
+# Assignment 05 Links:
+
+### Codeforces Invitation Link:
+https://codeforces.com/contestInvitation/952a351e16666c1a21ec095784aea682a2290e05
+
+### Alternative Link:
+https://codeforces.com/contests/627830
+[The alternative link will only work after you have successfully registered using the first link.]
+
+### Learning Outcome:
+Upon successful completion of this lab, students will have a solid understanding of graph and
+grid traversal techniques. They will be able to apply fundamental concepts such as graph
+traversal, cycle detection, shortest path finding, and flood fill in practical problem-solving
+scenarios. The lab strengthens algorithmic thinking and equips students to effectively translate
+between theoretical graph models and practical implementations in code.
+</br>
+</br>
+</br>
