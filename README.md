@@ -120,3 +120,60 @@ learned in the previous courses.
 </br>
 </br>
 </br>
+
+# Assignment 05 Links: 
+### Codeforces Invitation Link:
+https://codeforces.com/contestInvitation/952a351e16666c1a21ec095784aea682a2290e05 
+# Alternative Link: https://codeforces.com/contests/627830
+[The alternative link will only work after you have successfully registered using the first link.]
+
+### Learning Outcome:
+Upon successful completion of this lab, students will have a solid understanding of graph and grid traversal techniques. They will be able to apply fundamental concepts such as graph traversal, cycle detection, shortest path finding, and flood fill in practical problem-solving scenarios. The lab strengthens algorithmic thinking and equips students to effectively translate between theoretical graph models and practical implementations in code.
+</br>
+</br>
+</br>
+
+# Assignment 06 Links: 
+### Codeforces Invitation Link:
+https://codeforces.com/contestInvitation/b8c4e8c71c589349c258f994716f4c5c2a64d60d
+### Alternative Link: https://codeforces.com/contests/629756
+[The alternative link will only work after you have successfully registered using the first link.]
+
+### Learning Outcome:
+By the end of this lab, students will have a better understanding of how to use BFS and DFS to solve more advanced problems. They will learn how to check if a graph is bipartite, how to find a topological order of a graph, and solve other problems that use these techniques. This lab will help students think more clearly about how graphs work and how to turn those ideas into working code.
+/br>
+</br>
+</br>
+
+# Assignment-07 Links:
+Codeforces Invitation Link:
+https://codeforces.com/contestInvitation/d0bf7f26501fefb812a1ccfd886a788fee4d04db
+### Alternative Link: https://codeforces.com/contests/630881
+[The alternative link will only work after you have successfully
+registered using the first link.]
+
+### Learning Outcome:
+After completing this lab assignment, students will be able to use
+Dijkstra’s algorithm to solve and adapt shortest path problems in
+different situations. They will learn to handle different definitions
+of path cost and work with extra conditions or constraints, building a
+stronger understanding of how algorithms can be applied and extended to
+solve complex problems.
+</br>
+</br>
+</br>
+
+# Assignment-08 Links: 
+
+### Codeforces Invitation Link:
+https://codeforces.com/contestInvitation/361bb5c9756814b0b2964d26b84feb2eab8847e4
+### Alternative Link: https://codeforces.com/contests/632184
+[The alternative link will only work after you have successfully registered using the first link.]
+
+### Learning Outcome:
+
+After completing the lab and the assignment, the students should be able to learn how to implement Disjoint Set Union (DSU) and Minimum Spanning Tree (MST).
+</br>
+</br>
+</br>
+
